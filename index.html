@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRAN RESERVA vinos</title>
+    <link rel="icon" href="/CURSO/img/wine-svgrepo-com.svg">
+    <link rel="stylesheet" href="/CURSO/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="/CURSO/img/WhatsApp Image 2024-08-04 at 12.56.38.jpeg" width="50" height="50" alt="Logo del Club de Vinos">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#club">Club de vinos</a></li>
+                    <li><a href="#tienda">Tienda</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar..." id="search-input">
+            <button onclick="searchWine()">Buscar</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Suscripción a Membresía de Vinos</h1>
+        <form id="subscription-form">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="direccion">Dirección de Envío:</label>
+            <input type="text" id="direccion" name="direccion" required>
+
+            <label for="plan">Seleccione su Plan:</label>
+            <select id="plan" name="plan" required>
+                <option value="basico">Básico - $5.000/mes</option>
+                <option value="premium">Premium - $10.000/mes</option>
+                <option value="elite">Élite - $20.000/mes</option>
+            </select>
+
+            <button type="button" onclick="submitForm()">Suscribirse</button>
+        </form>
+    </div>
+    <script src="/CURSO/codigo.js"></script>
+</body>
+</html>
